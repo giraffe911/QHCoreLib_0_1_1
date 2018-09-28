@@ -1,0 +1,6 @@
+framework module QHCoreLib {
+
+    umbrella header "QHCoreLib.h"
+    export *
+    module * { export * }
+}

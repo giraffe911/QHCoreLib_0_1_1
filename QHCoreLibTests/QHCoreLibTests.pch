@@ -1,0 +1,25 @@
+//
+//  QHCoreLibTests.pch
+//  QHCoreLib
+//
+//  Created by changtang on 2017/6/6.
+//  Copyright © 2017年 TCTONY. All rights reserved.
+//
+
+#ifndef QHCoreLibTests_pch
+#define QHCoreLibTests_pch
+
+#import <Foundation/Foundation.h>
+
+#if DEBUG
+#   define QH_XCTAssertThrows_On_DEBUG XCTAssertThrows
+#else
+#   define QH_XCTAssertThrows_On_DEBUG XCTAssertNoThrow
+#endif
+
+// avoid non-null arguement warning
+static inline id nilValue() {
+    return nil;
+}
+
+#endif /* QHCoreLibTests_pch */
